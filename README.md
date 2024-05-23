@@ -2,7 +2,7 @@
 
 Fork of [fish-poetry](https://github.com/ryoppippi/fish-poetry) and modified for pdm.
 
-Hooks into a change in PWD to automatically launch a [PDM](https://pdm-project.org) environment for your PDM project.
+Hooks into a change in PWD to automatically launch a [PDM](https://pdm-project.org) environment for your PDM project and add colmpletions for [pdm scripts](https://pdm-project.org/latest/usage/scripts/).
 
 [![asciicast](https://asciinema.org/a/kO57JCdJTLte3A0457Sqf3yDP.svg)](https://asciinema.org/a/kO57JCdJTLte3A0457Sqf3yDP)
 
