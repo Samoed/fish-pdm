@@ -44,6 +44,16 @@ if command -s pdm > /dev/null
         # Activation
         if test -e "$PWD/pyproject.toml"
             if not set -q __pdm_fish_initial_pwd
+                # Check for poetry and [project] section
+                if grep -q '[tool.poetry]' $PWD/pyproject.toml
+                    echo "Poetry detected in pyproject.toml. Aborting activation."
+                    return
+                end
+                if not grep -q '[project]' $PWD/pyproject.toml
+                    echo "[project] section not found in pyproject.toml. Aborting activation."
+                    return
+                end
+
                 echo "Activating PDM environment..."
                 set -gx __pdm_fish_initial_pwd "$PWD"
                 eval (pdm venv activate)
