@@ -1,6 +1,6 @@
 # fish-python-autovenv
 
-Fork of [fish-poetry](https://github.com/ryoppippi/fish-poetry) and modified for pdm.
+Fork of [fish-poetry](https://github.com/ryoppippi/fish-poetry) and modified for usage with all venv.
 
 Hooks into a change virtual environment for your project.
 
