@@ -90,3 +90,6 @@ function __python_venv_activate --on-variable PWD
         end
     end
 end
+
+# Call the function on shell startup (if you open a new tab in a directory)
+__python_venv_activate
